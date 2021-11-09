@@ -1,6 +1,6 @@
-python-arq
+OpenCC
+Pillow
 Pyrogram
 TgCrypto
-aiohttp
-asyncio
-wget
+ffmpeg-python
+youtube-dl

@@ -1,23 +1,21 @@
-<p align="center"><img src="https://telegra.ph/file/c321c760c49b4b411fc68.png" style="width:100%"></p>
+#  Bella's  Experimental PH module ❤
 
-warning !, this is a telegram bot that contains adult content, access restrictions for this bot will be implemented soon, please don't report this repository and the example bot if you keep want to use it.
+<p align="center">
+<img src="https://socialify.git.ci/OfficialBawwa/TG_PH_Downloader_bot/image?description=1&descriptionEditable=Bella%27s%20%20Experimental%20PH%20module%20%E2%9D%A4%0A&font=KoHo&forks=1&issues=1&language=1&owner=1&pattern=Overlapping%20Hexagons&pulls=1&stargazers=1&theme=Dark" alt="TG_PH_Downloader_bot" width="640" height="320" />
+</p>
 
+## This bot can download video from ph quickly! Can be found in telegram as [@HARP XXX Downloader](https://t.me/HARPXXXBot)
 
-### PORNHUB DOWNLOADER BOT
+### Deploy to Heroku
 
-Simply way to deploy this bot, go deploy on heroku.
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/OfficialBawwa/TG_PH_Downloader_bot)
 
-<b>
-<a href="https://heroku.com/deploy?template=https://github.com/TheOnlyMrLucifer/YoutubeDLByLucifer2><img src="https://img.shields.io/badge/BOT ON HEROKU-Canary?style=badge&logo=heroku"width="310" height="50"/></a>
-</b>
+### Credits:
 
+[HARP Tech](https://t.me/HARP_Tech)
+[Pyrogram Library](https://github.com/pyrogram/pyrogram)
 
-```
-start - Start the bot
-repo - Give you a source code
-help - Guide for use
-```
+### Developers:
 
-### CREDITS 💖
- 
-
+[@Official_Bawwa](https://t.me/Official_Bawwa)
+[@Anjana-Ma](https://anjanama.me)

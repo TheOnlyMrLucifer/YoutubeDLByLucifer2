@@ -1,49 +1,40 @@
 {
-  "name": "PornHub downloader bot",
-  "description": "Telegram Porn Hub Bot.",
-  "repository": "https://github.com/TheOnlyMrLucifer/YoutubeDLByLucifer2",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/DJCTQ_-_18.svg/1024px-DJCTQ_-_18.svg.png",
-  "keywords": [
-    "python",
-    "telegram",
-    "bot",
-    "phub",
-    "phub bot",
-    "telegram-bot",
-    "pyrogram",
-    "ARQ",
-    "pornhub",
-    "API",
-    "Download"
-  ],
-  "stack": "heroku-20",
-  "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
-  ],
-  "env": {
-    "TOKEN": {
-            "description": "Bot Token of your Telegram Bot from @BotFather",
-            "required": true
+    "name": "PH Downloader Bot",
+    "description": "A bot that can PH videos download video or audio from any porn website.",
+    "logo": "https://telegra.ph/file/5aee6774b3c4ab6f0b5ed.jpg",
+    "keywords": [
+        "pornbot",
+        "Video Downloader",
+        "Telegram Bot",
+        "porn Bots"
+    ],
+    "website": "https://t.me/PeriOFiGPeeksTango",
+    "repository": "https://github.com/TheOnlyMrLucifer/YoutubeDLByLucifer2",
+    "success_url": "https://t.me/PeriOFiGPeeksTango",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "Your Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        }
     },
-    "ARQ_API_KEY": {
-	    "description": "Get this from @ARQRobot.",
-	    "required": true
-    },
-    "OWNER": {
-      "description": "your telegram username, without @ okay",
-      "value": "levina-lab"
-    },
-    "BOT_NAME": {
-      "description": "fill with your bot name",
-      "value": "PornHub Downloader Bot"
-    }
-  },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
     "formation": {
-      "worker": {
-        "quantity": 1,
-        "size": "free"
-      }
-  }
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
