@@ -37,7 +37,7 @@ async def time_to_seconds(time):
 )
 async def start(_, message):
     m= await message.reply_text(
-        text=f"🇬🇧 Hello, i'm {BOT_NAME}. you can download pornhub video with the quality up to 1080p, Just type a query or the video name you want to download and the bot will send you the result!\n\n🇮🇩 Halo, saya {BOT_NAME}",
+        text=f"🇬🇧 Hello, i'm {BOT_NAME}. you can download pornhub video with the quality up to 1080p, Just type a query or the video name you want to download and the bot will send you the result!\n\n🇮🇩 Made By Your's Truly @TheOnlyMrLucifer {BOT_NAME}",
         reply_markup=InlineKeyboardMarkup(
           [
             [
@@ -71,7 +71,7 @@ async def repo(_, message):
         reply_markup=InlineKeyboardMarkup(
           [
             [
-              InlineKeyboardButton("🧩 REPO 🧩", url=f"https://github.com/TheOnlyMrLucifer/YTDLV2"),
+              InlineKeyboardButton("🧩 REPO 🧩", url=f"https://github.com/TheOnlyMrLucifer/YoutubeDLByLucifer2"),
               InlineKeyboardButton("👩‍💻 Group 👩‍💻", url=f"t.me/PeriOFiGPeeksTango")
               
               ]
