@@ -1,0 +1,50 @@
+{
+  "name": "Uploader X Bot",
+  "description": "Telegram Bot to Upload URLs to Telegram as File and Video.",
+    "logo": "https://telegra.ph/file/908e8d3dcbd9704d22a3b.jpg",
+  "keywords": [
+    "telegram",
+    "best",
+    "youtube",
+    "downloader",
+    "open",
+    "source",
+    "multi",
+    "purpose",
+    "ffmpeg",
+    "remote",
+    "uploader"
+  ],
+  "success_url": "https://t.me/LuciferV4Bot",
+  "website": "hthttps://github.com/TheOnlyMrLucifer/YoutubeDLByLucifer2",
+  "repository": "https://github.com/TheOnlyMrLucifer/YoutubeDLByLucifer2",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
+    "TG_BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
