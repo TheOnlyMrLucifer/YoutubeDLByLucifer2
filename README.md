@@ -1,36 +1,84 @@
-## Uploader X  Bot
----
-# HEROKU DEPLOY
-# [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy)
 
-# RAILWAY deploy 
-### DEPLOY ON RAILWAY 🚂 it's working
-[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/TheOnlyMrLucifer/YoutubeDLByLucifer2/URL-UPLOAD&envs=TG_BOT_TOKEN,WEBHOOK)
-#
-# `TG_BOT_TOKEN` put your bot token
-# `WEBHOOK` = `ANYTHING`
+[![DEPLOY](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TheOnlyMrLucifer/YoutubeDLByLucifer2/)
+# Update (22 April 2021)
 
-Telegram RoBot to Upload Links.
+- Teamdrive Support added 
 
-**Features**:
 
-👉 Upload [YouTube-dl Supported Links](https://ytdl-org.github.io/youtube-dl/supportedsites.html) to Telegram.
+`Teamdrive is not for users You have to hardcode it ,`
+`Wait for V2 bot This Bot don't have active development I will add User Specfic Teamdrive option`
 
-👉 Upload HTTP/HTTPS as File/Video to Telegram.
+# How can You Add Teamdrive
+-  Replace `TEAMDRIVE_FOLDER_ID` and `TEAMDRIVE_ID` in [creds.py](./creds.py) 
 
-👉 Upload zee5, sony.live, voot and much more 😋
 
-👉 Broadcast message, check total users
+### What Is this ?
+ ```
+   A Telegram Bot Written In Python 
 
-👉  Permanent thumbnail Support
+ ```
+ ### what can it do ?
 
-**Heroku Buildpacks**
+ ```  
+ It Can Upload Your Direct and Supported links into Google Drive.
+
+ ```
+### Install Module 
 ```
-https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+  sudo pip3 install -r requirements.txt
 ```
+### Run This bot
 ```
-heroku/python
+python3 bot.py
 ```
+ ### How Can We use It 
+  - First authorise Bot Using `/auth` command Generate a Key and send it To bot .
+  - Now You can Send Supported Link To Bot.
 
-#### LICENSE
-- GPLv3
+### Avalible Commands
+  - `/start` =  Start Message
+  - `/auth` = Authorise You
+  - `/revoke` = Delete Your Saved credential
+  - `/help` =  help Text
+
+## Supported Links : 
+ - Direct Link
+ - Mega.nz Link
+ - openload link (not avalibe anymore)
+ - Dropbox Link
+
+## Requirements
+  - [Google Drive api Credential](https://console.cloud.google.com/apis/credentials) (Others type)  `Required`
+  - Telegram Bot Token (Using BotFather)  `Required`
+  - Openload ftp login and Key  `optional`
+  - Mega Email and Password  `Optional`
+
+ ` If You  wanna Change Openload Api and Mega Email Password You Can Change it From Given Path`
+   - Mega => Plugins > TEXT.py
+   - Openload  => Plugins > dlopenload.py
+
+## Setup Your Own Bot
+```
+1. Create Your  [Google Drive api Credential](https://console.cloud.google.com/apis/credentials) (other type) and Download  Its json
+
+2. Paste it In Bot Root Directroy  and Rename it "client_secrets.json"
+
+3. Replace Your Bot Token in  [creds.py file](./creds.py)
+
+4. Your Bot is Ready to Host. 
+```
+### You Can Use Heroku To host It.
+
+ `Make sure You have Changed Your Bot Token and google client api Before Hosting It`
+ 
+# TODO
+  - Rename file while uploading
+  - Adding Telegram File Support [ slow Download :( ]
+  - Add  Youtube-dl
+  - Fix openload support
+  - Adding zippyshare , Mediafire , cloud mail  , Yandex disk ,Sourceforge {these are already written In PPE plugin you can use these from there}
+  - Google Drive Direct Link Generator
+
+
+### Licence
+  - GPLv3
