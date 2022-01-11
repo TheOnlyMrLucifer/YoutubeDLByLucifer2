@@ -18,7 +18,7 @@ Bellayt = Client(
 YTDL_REGEX = (r"^((?:https?:)?\/\/)"
               r"?((?:www|m)\.)"
               r"?((?:|xvideos\.com|pornhub\.com"
-              r"|xhamster\.com|xnxx\.com))"
+              r"|xhamster\.com|baddiehub\.com))"
               r"(\/)([-a-zA-Z0-9()@:%_\+.~#?&//=]*)([\w\-]+)(\S+)?$")
 s2tw = OpenCC('s2tw.json').convert
 
@@ -28,12 +28,12 @@ s2tw = OpenCC('s2tw.json').convert
 
 @Bellayt.on_message(filters.command("start"))
 async def gstart(_, message: Message):
-      await message.reply_text("""**PornHub Downloader Working as Fuck 💦 Send Link of Pornhub, Xvideos, Xhamster, XnXX ✅**""",
+      await message.reply_text("""**PornHub Downloader Working as Fuck 💦 Send Link of Pornhub, Xvideos, Xhamster, Baddiehub ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💦 18+ Group 💦", url="https://t.me/PeriOFiGPeeksTango")
+                        "💦 18+ Group 💦", url="https://t.me/WikiLeaks69")
                 ]
             ]
         )
@@ -77,7 +77,7 @@ async def callback_query_ytdl_audio(_, callback_query):
             await message.reply_chat_action("typing")
             info_dict = ydl.extract_info(url, download=False)
             # download
-            await callback_query.edit_message_text("Downloading audio... Join @PeriOFiGPeeksTango")
+            await callback_query.edit_message_text("Downloading audio... Join @WikiLeaks69")
             ydl.process_info(info_dict)
             # upload
             audio_file = ydl.prepare_filename(info_dict)
@@ -107,7 +107,7 @@ async def send_audio(message: Message, info_dict, audio_file):
         get_file_extension_from_url(thumbnail_url)
     # info (s2tw)
     webpage_url = info_dict['webpage_url']
-    title = '@PeriOFiGPeeksTango '+s2tw(info_dict['title'])
+    title = '@WikiLeaks69 '+s2tw(info_dict['title'])
     caption = f"<b><a href=\"{webpage_url}\">{title}</a></b>"
     duration = int(float(info_dict['duration']))
     performer = s2tw(info_dict['uploader'])
@@ -158,7 +158,7 @@ async def send_video(message: Message, info_dict, video_file):
         get_file_extension_from_url(thumbnail_url)
     # info (s2tw)
     webpage_url = info_dict['webpage_url']
-    title = 'PeriOFiGPeeksTango'+s2tw(info_dict['title'])
+    title = 'WikiLeaks69'+s2tw(info_dict['title'])
     caption = f"<b><a href=\"{webpage_url}\">{title}</a></b>"
     duration = int(float(info_dict['duration']))
     width, height = get_resolution(info_dict)
@@ -175,7 +175,7 @@ async def send_video(message: Message, info_dict, video_file):
                     ),
                     InlineKeyboardButton(
                         "Channel 18+",
-                        url="https://t.me/PeriOFiGPeeksTango"
+                        url="https://t.me/WikiLeaks69"
                     )
                 ]
             ]
@@ -224,7 +224,7 @@ async def callback_query_forward_video(_, callback_query):
 print(
     """
 Bot Started!
-Join @PeriOFiGPeeksTango
+Join @WikiLeaks69
 """
 )
 
